@@ -1,45 +1,45 @@
 # NumConvert
 
-NumConvert - это утилита для конвертации чисел между различными системами счисления. Поддерживаются следующие форматы:
+NumConvert is a utility for converting numbers between different numeral systems. It supports the following formats:
 
-- Двоичная (Binary, 0b)
-- Восьмеричная (Octal, 0o)
-- Шестнадцатеричная (Hexadecimal, 0x)
-- Десятичная (Decimal)
+- Binary (0b)
+- Octal (0o)
+- Hexadecimal (0x)
+- Decimal
 
-## Возможности
+## Features
 
-- Автоматическое определение системы счисления введенного числа
-- Преобразование числа из одной системы счисления в другую
-- Обработка чисел с префиксами (0x, 0b, 0o) или без них
-- Интерактивный ввод с поддержкой команд
+- Automatic detection of the numeral system from input
+- Conversion of numbers between different numeral systems
+- Support for prefixed numbers (0x, 0b, 0o) or plain numbers
+- Interactive input with command support
 
-## Установка и запуск
+## Installation and Running
 
-### Клонирование репозитория
+### Clone the repository
 
 ```sh
 $ git clone https://github.com/yourusername/NumConvert.git
 $ cd NumConvert
 ```
 
-### Сборка
+### Build
 
 ```sh
 $ go build -o numconvert
 ```
 
-### Запуск
+### Run
 
 ```sh
 $ ./numconvert
 ```
 
-## Использование
+## Usage
 
-После запуска программы пользователю предлагается ввести число с префиксом (0x, 0b, 0o) или без него. Также можно указать желаемую систему счисления для перевода. 
+After launching the program, the user can input a number with a prefix (0x, 0b, 0o) or without one. Additionally, a target numeral system can be specified for conversion.
 
-Примеры ввода:
+Example inputs:
 
 ```
 > 0x1A
@@ -58,27 +58,23 @@ $ ./numconvert
 309
 ```
 
-Для выхода из программы введите:
+To exit the program, type:
 
 ```
 > stop
 ```
 
-## Структура проекта
+## Project Structure
 
 ```
 NumConvert/
 │── internal/
-│   ├── format.go   # Логика обработки форматов
-│── main.go         # Основной файл программы
-│── go.mod          # Модуль Go
-│── go.sum          # Зависимости
+│   ├── format.go   # Format handling logic
+│── main.go         # Main program file
+│── go.mod          # Go module
+│── go.sum          # Dependencies
 ```
 
-## Контрибьюция
+## Contribution
 
-Если у вас есть идеи для улучшения, пожалуйста, создайте Pull Request или откройте Issue.
-
-## Лицензия
-
-Этот проект распространяется под лицензией MIT.
+If you have ideas for improvements, please create a Pull Request or open an Issue.
